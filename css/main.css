@@ -1,0 +1,169 @@
+@import url("./global.css");
+
+body {
+    background-image: url("../img/bg03.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+min-height: 100vh;
+width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Header{
+    color: white;
+    padding: .5rem;
+display: flex;
+align-items: center;
+}
+
+.Header img{
+    margin: 0px 10px 0px 10px;
+}
+
+
+@media(max-width: 470px){
+
+    .Header img{
+        width: 60px;
+    }
+
+    .Header h1{
+        font-size: 28px;
+    }
+
+}
+
+
+main {
+    /* background-color: #ccc; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 800px;
+    
+}
+
+.todo-app {
+    margin: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    background-color: #ffffffa8;
+    padding: 1rem;
+    border: 4px solid rgba(233, 233, 233, 0.603);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#tasks-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 700px ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-track-color: var(--p1-color);
+}
+
+.todo-app h3{
+margin-bottom: 10px;
+width: 100%;
+text-align: center;
+padding: 5px;
+background-color: #f8f8f8f5;
+border-radius: 5px;
+color: var(--p1-color);
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.562);
+}
+
+textarea{
+    min-height: 150px;
+}
+
+input:focus{
+    outline: none;
+    border: 1px dashed var(--p1-color);
+}
+textarea:focus{
+    outline: none;
+    border: 1px dashed var(--p1-color);
+}
+
+button {
+    width: fit-content;
+    padding: 10px;
+    background-color: white;
+    color: var(--p1-color);
+    border: none;
+    font-weight: 600;
+    border: 2px solid var(--p1-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+button:hover {
+   background-color: var(--p1-color);
+   color: white;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(141, 218, 0);
+}
+
+span , p{
+    margin: 5px;
+    /* border: 2px solid grey; */
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+}
+
+.taskTitle{
+    
+    background-color: aqua;
+}

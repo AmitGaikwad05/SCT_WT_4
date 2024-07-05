@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+
+:root{
+
+--p1-color: rgb(243, 119, 3);
+--p2-color: rgb(255, 164, 80);
+
+--s1-color: rgb(83, 83, 83);
+--s2-color: rgb(143, 143, 143);
+
+}
+
+/*  Will be using color variables for theme creation */

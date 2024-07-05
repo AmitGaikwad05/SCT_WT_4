@@ -1,0 +1,56 @@
+
+<!-- 
+  Title : SkillCraft Technology internship (Assignment-04)
+  Topic : To do List
+  Developer : Amit Gaikwad
+  Version 1.1
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List | SkillCraft</title>
+  
+    <link
+      rel="shortcut icon"
+      href="./img/toDoList favicon/logo512.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="Header">
+        <img src="./img/todolistLogo.png" alt="logo" width="80px" data-aos="fade-right" data-aos-delay="150" data-aos-offset="0" >
+      <h1   data-aos="fade-right" data-aos-delay="350" data-aos-offset="0" >To-Do List</h1>
+    </header>
+    <main>
+      <div class="todo-app"  data-aos="fade-top" data-aos-delay="350" data-aos-offset="0"  >
+        <h3>Add your tasks</h3>
+        <div class="input-section">
+          <input type="text" id="title" placeholder="Title" />
+          <textarea id="description" placeholder="Description"></textarea>
+          <input type="datetime-local" id="datetime" />
+          <button onclick="addTask()">Add Task</button>
+        </div>
+      </div>
+
+      <div class="todo-app"  id="tasks-div"  data-aos="fade-right" data-aos-delay="850" data-aos-offset="0"  >
+        <h3>Tasks</h3>
+        <ul id="task-list"></ul>
+      </div>
+
+    </main>
+
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600
+        });
+    </script>
+
+  </body>
+</html>
